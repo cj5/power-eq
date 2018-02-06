@@ -13,7 +13,7 @@
  */
 
  /*
-Template Name: Home
+Template Name: Custom
 */
 
 get_header(); ?>

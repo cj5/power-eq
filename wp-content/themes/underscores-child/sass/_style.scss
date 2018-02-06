@@ -1,7 +1,92 @@
+// Global
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	transition: 0.2s all ease-in-out;
+}
+
+body {
+	
+}
+
 // Header
-#masthead {
+.header-top {
 	background: $color-main;
-	padding-bottom: 20px;
+	height: 100px;
+	position: relative;
+	display: block;
+}
+.header-left {
+	display: inline-block;
+	width: 50%;
+	height: 100px;
+	vertical-align: top;
+}
+.header-middle {	
+	display: inline-block;
+	width: 39%;
+	position: relative;
+	height: 100px;
+	img, form.search-form {
+		display: inline-block;
+	}
+	img {
+		margin-right: 20px;
+	}
+	form.search-form {
+		vertical-align: top;
+	}
+	.abs-wrapper {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	input {
+		border-radius: 0;
+		height: 30px;
+	}
+	input.search-field::-webkit-input-placeholder {
+		content: "poop";
+	}
+	input.search-submit {
+		background: $color-2;
+		color: #fff;
+		border: none;
+		font-size: 16px;
+		padding: 0 8px;
+	}
+}
+.header-right {
+	display: inline-block;
+	width: 10%;
+	img {
+		top: 10px;
+		position: absolute;
+	}
+}
+.main-nav {
+	background: #aaa;
+	ul {
+		text-align: center;
+	}
+	li {
+		display: inline-block;
+	}
+	a {
+		font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+		display: inline-block;
+		padding: 20px 16px;
+		color: #fff;
+		font-size: 20px;
+		text-transform: uppercase;
+		&:hover {
+			background: $color-2;
+		}
+	}
 }
 
 // Content
