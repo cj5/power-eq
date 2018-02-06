@@ -95,7 +95,8 @@ body {
 	}
 }
 .main-nav {
-	background: #aaa;
+	background: #eee;
+	border-bottom: 4px solid $color-2;
 	ul {
 		text-align: center;
 	}
@@ -105,13 +106,14 @@ body {
 	a {
 		font-family: $font-2;
 		display: inline-block;
-		padding: 20px 20px;
+		padding: 20px 20px 16px;
 		margin: 0 -2px;
-		color: #fff;
+		color: $color-main;
 		font-size: 20px;
 		text-transform: uppercase;
 		&:hover {
 			background: $color-2;
+			color: #fff;
 		}
 	}
 }
@@ -152,7 +154,7 @@ body .cycloneslider-template-standard .cycloneslider-caption-description {
 		background: $color-main;
 		color: #fff;
 		padding: 16px 40px;
-		font-weight: bold;
+		// font-weight: bold;
 		&:hover {
 			background: $color-2;
 		}
@@ -186,8 +188,9 @@ body .cycloneslider-template-standard .cycloneslider-pager span.cycle-pager-acti
 // Footer
 .site-footer {
 	background: #eee;
-	padding: 60px 0 100px;
+	padding: 60px 0 80px;
 	color: #555;
+	border-top: 4px solid $color-main;
 	a {
 		color: $color-main;
 		&:hover {
@@ -245,10 +248,12 @@ body .cycloneslider-template-standard .cycloneslider-pager span.cycle-pager-acti
 .locations-wrapper {	
 	text-align: left;
 	border-top: 2px solid #ccc;
-	margin-top: 60px;
-	padding-top: 60px;
+	margin-top: 40px;
+	padding-top: 40px;
 	h3 {
 		margin: 0 0 10px;
+		color: $color-main;
+		font-size: 18px;
 	}
 	.footer-left, .footer-middle, .footer-right {
 		vertical-align: top;
@@ -266,10 +271,23 @@ body .cycloneslider-template-standard .cycloneslider-pager span.cycle-pager-acti
 		padding-left: 0;
 	}
 	ul {
-		display: inline-block;
-		margin-bottom: 56px;
+		display: inline-block;		
+		margin-bottom: 30px;
+		padding-bottom: 26px;
+		// border-bottom: 2px solid #ccc;
 		&:last-child {
 			margin-bottom: 0;
+			border-bottom: 0px solid #ccc;
+		}
+		li, a.phone {
+			font-size: 14px;
+		}
+	}
+	a {
+		color: #555;
+		&:hover {
+			// text-decoration: underline;
+			color: $color-2;
 		}
 	}
 	.phone {
