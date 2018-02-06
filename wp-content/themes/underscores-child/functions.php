@@ -8,9 +8,13 @@ function enqueue_parent_styles() {
 
 add_filter('get_search_form', 'my_search_form');
 
-function my_search_form($text) {
-    $text = str_replace('value="Search"', 'value="Go"', $text);
-    return $text; 
+function my_scripts_method() {
+  wp_enqueue_script(
+      'custom-script',
+      get_stylesheet_directory_uri() . '/js/scripts.js',
+      array( 'jquery' )
+  );
 }
+add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 
 ?>

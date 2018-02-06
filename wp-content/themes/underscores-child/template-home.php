@@ -19,6 +19,9 @@ Template Name: Home
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+		
+	<?php if( function_exists('cyclone_slider') ) cyclone_slider('home'); ?>
+	
 		<main id="main" class="site-main container">
 
 			<?php

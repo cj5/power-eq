@@ -5,7 +5,8 @@ var sass = require('gulp-sass');
 gulp.task('browser-sync', function() {
   var files = [
     './style.css',
-    './*.php'
+    './*.php',
+    './js/scripts.js'
   ];
 
   browserSync.init(files, {

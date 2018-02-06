@@ -21,7 +21,7 @@
 	
 	<link rel=icon href=/wp-content/uploads/2018/02/favicon.png type="image/png">
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Noto+Sans:400,700|Montserrat" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
