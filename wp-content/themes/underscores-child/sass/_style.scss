@@ -31,6 +31,9 @@ body {
 .ib {
   display: inline-block;
 }
+.mg-md-rt {
+  margin-right: 30px;
+}
 .left, .right {
 	display: inline-block;
 	width: 49%;
@@ -41,6 +44,9 @@ body {
 }
 .right {
 	padding-left: 30px;
+}
+.hide {
+  display: none;
 }
 
 ///////////////////////////////////

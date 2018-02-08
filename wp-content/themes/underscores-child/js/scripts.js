@@ -1,11 +1,4 @@
 jQuery(document).ready(function($) {
-  // cyclonesliser sizing
-  const sliderHt = $('.cycloneslider img').height();
-  const sliderCapHt = $('.cycloneslider-caption').height()  
-
-  $('.cycloneslider-slides, .cycloneslider-template-standard, .cycloneslider-slide-image, div.cycloneslider-slides.cycle-slideshow').css('height', sliderHt);
-
-  $('.slider-caption-wrapper').css('transform', 'translateY(-' + ((sliderHt / 2) - ((sliderCapHt / 2) - 20)) + 'px)');
 
   // vp width stuff
   $('body').css('overflow-y', 'hidden');
@@ -56,68 +49,6 @@ jQuery(document).ready(function($) {
   }, function(){
     $('.sub-menu-specialty').css('display', 'none');
   });
-
-  // let dropState = 0;
-
-  // const bordHovYes = () => {
-  //   // if (dropState === 1) {
-  //     $('.sub-menu-equip').css('display', 'inline-block');
-  //     $('.header-border').hover(function(){
-  //       $('.sub-menu-equip').css('display', 'inline-block');
-  //     }, function(){
-  //       $('.sub-menu-equip').css('display', 'inline-block');
-  //     });
-  //   // }
-  //   console.log('bordHovYes Ran');
-  // }
-  // const bordHovNo = () => {
-  //   // if (dropState === 0) {
-  //     $('.header-border').hover(function(){
-  //       $('.sub-menu-equip').css('display', 'none');
-  //     }, function(){
-  //       $('.sub-menu-equip').css('display', 'none');
-  //     });
-  //   // }
-  //   console.log('bordHovNo Ran');
-  // }
-
-  // $('.hov-equip').hover(function(){
-  //   console.log('.hov-equip was hovered');
-  //   // $('.sub-menu-equip').css('display', 'inline-block');
-  //   // dropState = 1;
-  //   bordHovYes();
-  // }, function(){
-  //   // $('.sub-menu-equip').css('display', 'inline-block');
-  //   bordHovYes();
-  // });
-
-  // $(':not(.hov-equip)').hover(function(){
-  //   console.log('NOT .hov-equip was hovered');
-  //   // $('.sub-menu-equip').css('display', 'none');
-  //   // dropState = 0;
-  //   bordHovNo();
-  // }, function(){
-  //   // $('.sub-menu-equip').css('display', 'none');
-  //   bordHovNo();
-  // });
-
-  // $('.hov-equip, .sub-menu-equip').hover(function(){
-  //   $('.sub-menu-equip').css('display', 'inline-block');
-  //   dropState = 1;    
-  //   console.log('dropStateNo', dropState);
-  //   bordHovYes();
-  // }, function(){
-  //   $('.sub-menu-equip').css('display', 'none');    
-  //   dropState = 0;
-  //   console.log('dropStateNo', dropState);
-  // });  
-
-  // setTimeout(() => {
-  //   console.log('dropStateTimeOut1', dropState);
-  // }, 7000);
-  // setTimeout(() => {
-  //   console.log('dropStateTimeOut2', dropState);
-  // }, 9000);
 
   // hero img fill
   let heroHt = $('#hero img').height();
