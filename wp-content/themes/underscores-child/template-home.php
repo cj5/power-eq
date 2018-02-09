@@ -59,7 +59,7 @@ get_header(); ?>
 			<!-- sub menus -->
 			<div class="sub-menu sub-menu-boilers">
 				<div class="sub-menu-border"></div>
-				<div class="container hov-boilers">
+				<div class="container">
 					<ul>
 						<li><a href="">Cleaver Brooks</a></li>
 						<li><a href="">Nebraska Boiler</a></li>
@@ -75,7 +75,7 @@ get_header(); ?>
 		</div>
 		<div class="sub-menu sub-menu-compressors">
 				<div class="sub-menu-border"></div>
-				<div class="container hov-compressors">
+				<div class="container">
 					<ul>
 						<li><a href="">Gardner Denver</a></li>
 						<li><a href="">FS Elliot</a></li>
@@ -90,7 +90,7 @@ get_header(); ?>
 		</div>
 		<div class="sub-menu sub-menu-pumps">
 				<div class="sub-menu-border"></div>
-				<div class="container hov-pumps">
+				<div class="container">
 					<ul>
 					<li><a href="">Viking Pump</a></li>
 					<li><a href="">Ansimag</a></li>
@@ -104,7 +104,7 @@ get_header(); ?>
 		</div>
 		<div class="sub-menu sub-menu-specialty">
 				<div class="sub-menu-border"></div>
-				<div class="container hov-specialty">
+				<div class="container">
 					<ul>
 						<li><a href="">Armstrong</a></li>
 						<li><a href="">Mueller</a></li>

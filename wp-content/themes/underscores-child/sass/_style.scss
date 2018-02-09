@@ -387,7 +387,8 @@ header.entry-header {
   }
   h2 {
     color: $color-main;
-    margin-bottom: 30px;
+		margin-bottom: 30px;
+		line-height: 23px;
   }
   p {
     font-size: 22px;
@@ -556,7 +557,7 @@ header.entry-header {
   .wrapper {
     text-align: center;
     min-height: 105px;
-    padding: 30px 0;
+    padding: 24px 0;
     display: inline-block;
     width: 100%;
     position: relative;
@@ -578,7 +579,7 @@ header.entry-header {
       color: #fff;
       font-size: 18px;
       position: relative;
-      line-height: 18px;
+      line-height: 18px;      
       &:hover .icon {
         fill: $color-2;
       }
@@ -595,11 +596,7 @@ header.entry-header {
   }
   .copyright {
     text-align: center;        
-    color: #fff;    
-    // position: absolute;
-    // left: 50%;
-    // top: 53%;
-    // transform: translate(-50%, -50%);
+    color: #fff;
     text-transform: uppercase;
     ul {
       margin-bottom: 10px;    
@@ -629,6 +626,13 @@ header.entry-header {
       font-size: 14px;
       margin: 0;
       text-transform: capitalize;
+      a {
+        text-transform: lowercase;
+        color: #fff;
+        &:hover {
+          color: $color-2;
+        }
+      }
     }
   }
   .social {

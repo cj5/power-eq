@@ -1,65 +1,69 @@
 jQuery(document).ready(function($) {
 
-  // vp width stuff
+  // VP WIDTH STUFF
   $('body').css('overflow-y', 'hidden');
   let vpW = $(window).width();
   console.log('vp width: ', vpW);
   $('body').css('overflow-y', 'visible');
 
-  // main nav sub menu transitions
-
+  // MAIN NAV SUB MENU TRANSITIONS
   $('.hov-equip, .sub-menu-equip').hover(function(){
     $('.sub-menu-equip').css('display', 'inline-block');
   }, function(){
     $('.sub-menu-equip').css('display', 'none');
   });
-
+  $('.sub-menu-equip').hover(function(){
+    $('.sub-menu-equip').css('display', 'inline-block');
+  }, function(){
+    $('.sub-menu-equip').css('display', 'none');
+  });
+  // ~~~~~~~~~
   $('.hov-service, .sub-menu-service').hover(function(){
     $('.sub-menu-service').css('display', 'inline-block');
   }, function(){
     $('.sub-menu-service').css('display', 'none');
   });
-
+  // ~~~~~~~~~
   $('.hov-search, .sub-menu-search').hover(function(){
     $('.sub-menu-search').css('display', 'inline-block');
   }, function(){
     $('.sub-menu-search').css('display', 'none');
   });
-
+  // ~~~~~~~~~
   $('.hov-boilers, .sub-menu-boilers').hover(function(){
     $('.sub-menu-boilers').css('display', 'inline-block');
   }, function(){
     $('.sub-menu-boilers').css('display', 'none');
   });
-
+  // ~~~~~~~~~
   $('.hov-compressors, .sub-menu-compressors').hover(function(){
     $('.sub-menu-compressors').css('display', 'inline-block');
   }, function(){
     $('.sub-menu-compressors').css('display', 'none');
   });
-
+  // ~~~~~~~~~
   $('.hov-pumps, .sub-menu-pumps').hover(function(){
     $('.sub-menu-pumps').css('display', 'inline-block');
   }, function(){
     $('.sub-menu-pumps').css('display', 'none');
   });
-
+  // ~~~~~~~~~
   $('.hov-specialty, .sub-menu-specialty').hover(function(){
     $('.sub-menu-specialty').css('display', 'inline-block');
   }, function(){
     $('.sub-menu-specialty').css('display', 'none');
   });
 
-  // hero img fill
+  // HERO IMG FILL
   let heroHt = $('#hero img').height();
   $('.hero-img-fill').css('height', heroHt);
   
-  // mission image filter sizing
+  // MISSION IMAGE FILTER SIZING
   let missionHt = $('#mission .content').outerHeight();
   $('#mission').css('height', missionHt);
   $('#mission .img-filter').css('height', missionHt);
 
-  // map filter sizing
+  // MAP FILTER SIZING
   let mapHt = $('#locations').outerHeight(true);
   let locBorderString = $('#locations').css('border-width').split(' ');
   let locBorder = locBorderString.filter(x => x != ('0px'));
@@ -70,22 +74,19 @@ jQuery(document).ready(function($) {
   $('.map-filter').css('height', mapHt - border);
   $('#map').css('height', mapHt - border);
 
+  //////////////////////////////////
   // FUNCTION FIRES ON SCREEN RESIZE
   const updateContainer = () => {
-    // cycloneslider sizing
-    const sliderHt = $('.cycloneslider img').height();
-    const sliderCapHt = $('.cycloneslider-caption').height();
-  
-    $('.cycloneslider-slides, .cycloneslider-template-standard, .cycloneslider-slide-image').css('height', sliderHt);
-  
-    $('.slider-caption-wrapper').css('transform', 'translateY(-' + ((sliderHt / 2) - ((sliderCapHt / 2) - 20)) + 'px)');
+    // HERO IMG FILL
+    let heroHt = $('#hero img').height();
+    $('.hero-img-fill').css('height', heroHt);
     
-    // mission image filter sizing
+    // MISSION IMAGE FILTER SIZING
     let missionHt = $('#mission .content').outerHeight();
     $('#mission').css('height', missionHt);
     $('#mission .img-filter').css('height', missionHt);
 
-    // map filter sizing
+    // MAP FILTER SIZING
     let mapHt = $('#locations').outerHeight(true);
     let locBorderString = $('#locations').css('border-width').split(' ');
     let locBorder = locBorderString.filter(x => x != ('0px'));
@@ -103,7 +104,7 @@ jQuery(document).ready(function($) {
 
 });
 
-// Google Map JS API
+// GOOGLE MAP JS API
 var map;
 function initMap() {
   var location = {lat: 35.1475699, lng: -89.9602086};

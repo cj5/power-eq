@@ -85,7 +85,7 @@
 		<!-- sub menus -->
 		<div class="sub-menu sub-menu-equip">
 			<div class="sub-menu-border"></div>
-			<div class="container hov-equip">
+			<div class="container">
 				<ul>
 					<li><a href="">Boilers</a></li>
 					<li><a href="">Compressors</a></li>
@@ -108,7 +108,7 @@
 		</div>
 		<div class="sub-menu sub-menu-search">
 			<div class="sub-menu-border"></div>
-			<div class="container hov-search">
+			<div class="container">
 				<?php get_search_form(); ?>
 			</div>
 		</div>

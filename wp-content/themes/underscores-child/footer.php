@@ -40,8 +40,8 @@
     </div>      
     <!-- <div class="map-filter"></div> -->
     <div class="map">
-        <div id="map"></div>                  
-    </div>    
+        <div id="map"></div>
+    </div>
   </section>
 
 	<footer id="colophon" class="site-footer">
@@ -59,7 +59,7 @@
               <li><a href="">Privacy</a></li>
               <li><a href="">Sitemap</a></li>
             </ul>
-            <p>&copy; 2018 Power Equipment Company</p>
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Power Equipment Company &nbsp;|&nbsp;  <i>Web Design:</i>&nbsp;&nbsp;<a href="http://chrisstack.co" target="_blank">chrisstack.co</a></p>
           </div>
           <div class="social ib">
             <ul>
