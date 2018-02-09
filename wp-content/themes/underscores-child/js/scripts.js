@@ -74,6 +74,24 @@ jQuery(document).ready(function($) {
   $('.map-filter').css('height', mapHt - border);
   $('#map').css('height', mapHt - border);
 
+  // OWL CAROUSEL
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+
   //////////////////////////////////
   // FUNCTION FIRES ON SCREEN RESIZE
   const updateContainer = () => {
