@@ -55,7 +55,8 @@ jQuery(document).ready(function($) {
   });
 
   // HERO IMG FILL
-  let heroHt = $('#hero img').height();  
+  let heroHt = $('#hero img').height();
+  $('.hero-img-fill').css('height', heroHt);
   if (heroHt === 0) {
     console.log('hero ht: ', heroHt);
     setTimeout(() => {
@@ -71,8 +72,26 @@ jQuery(document).ready(function($) {
       }
     }, 1000);
   }
-  $('.hero-img-fill').css('height', heroHt);
-  
+
+  // BANNER IMG FILL
+  let bannerHt = $('#banner img').height();
+  $('.banner-img-fill').css('height', bannerHt);
+  if (bannerHt === 0) {
+    console.log('banner ht: ', bannerHt);
+    setTimeout(() => {
+      bannerHt = $('#banner img').height();
+      console.log('banner ht timeout: ', bannerHt);
+      $('.banner-img-fill').css('height', bannerHt);
+      if (bannerHt === 0) {
+        setTimeout(() => {
+          bannerHt = $('#banner img').height();
+          console.log('banner ht timeout 2: ', bannerHt);
+          $('.banner-img-fill').css('height', bannerHt);
+        }, 2000);
+      }
+    }, 1000);
+  }
+
   // MISSION IMAGE FILTER SIZING
   let missionHt = $('#mission .content').outerHeight();
   $('#mission').css('height', missionHt);
@@ -95,22 +114,17 @@ jQuery(document).ready(function($) {
     margin:10,
     nav:true,
     navText:['',''],
-    margin: 20,
+    margin: 18,
     dots: false,
     autoplay: true,
     autoplayTimeout: 2500,
+    // autoplayHoverPause: true,
     responsive:{
-    0:{
-      items: 1
-    },
-    600:{
-      items: 2
-    },
-    1000:{            
-      items: 4
+      0:{ items: 1 },
+      600:{ items: 2 },
+      1000:{ items: 4 }
     }
-  }
-});
+  });
 
   //////////////////////////////////
   // FUNCTION FIRES ON SCREEN RESIZE
@@ -124,6 +138,11 @@ jQuery(document).ready(function($) {
     // HERO IMG FILL
     let heroHt = $('#hero img').height();    
     $('.hero-img-fill').css('height', heroHt);
+
+    // BANNER IMG FILL
+    let bannerHt = $('#banner img').height();
+    console.log('bannerHt', bannerHt);
+    $('.banner-img-fill').css('height', bannerHt);
     
     // MISSION IMAGE FILTER SIZING
     let missionHt = $('#mission .content').outerHeight();

@@ -25,7 +25,7 @@ p {
 	margin: 0;
 }
 body {
-	animation: 1s ease-in-out fadeIn;
+	animation: 1.0s ease-in-out fadeIn;
 	color: #555;
 	font-family: $font-1;
 }
@@ -191,11 +191,12 @@ input.search-submit {
 	padding: 0 5px 0 0;
 	margin: 0;
 	position: relative;
-	bottom: 1px;
+	top: 1px;
 	background: $color-main;
 	border: none;
 	color: #fff;
-	font-family: $font-2;
+  font-family: $font-2;
+  font-size: $ft-sz-nav;
 	font-style: italic;
 	text-transform: uppercase;
 	&:hover {
@@ -246,7 +247,7 @@ header.entry-header {
       opacity: 0.6;
       line-height: 80px;
       font-style: italic;
-      animation: 1s ease-in slideInFromLeft;
+      animation: 0.5s ease-in slideInFromLeft;
     }
   } 
 }
@@ -284,14 +285,14 @@ header.entry-header {
       position: relative;
     }   
     &:hover:after {
-      border-left: solid transparent 30px;
-      border-right: solid transparent 30px;
-      border-bottom: solid $color-2 20px;
+      border-left: solid transparent 20px;
+      border-right: solid transparent 20px;
+      border-bottom: solid $color-2 15px;
       bottom: 0;
       content: " ";
       height: 0;
       left: 50%;
-      margin-left: -30px;
+      margin-left: -25px;
       position: absolute;
       width: 0;
       opacity: 1;      
@@ -424,7 +425,7 @@ header.entry-header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 80px 0;
+    padding: 80px 0 90px;
   }
   h2 {    
     margin-bottom: 40px;
@@ -445,23 +446,17 @@ header.entry-header {
     color: $color-main;
     margin-bottom: 50px;
   }
-  img {
-    width: auto;
-    margin: 0 auto;
-    position: relative;
-    bottom: 0;
-    @include trans();
-  }
   a {
     display: inline-block;
     width: 100%;
     padding: 80px 0;
     border: 2px solid $color-main;
     position: relative;
+    height: 279px;
     &:hover:after {
       border-left: solid transparent 30px;
       border-right: solid transparent 30px;
-      border-bottom: solid $color-2 20px;
+      border-bottom: solid $color-2 25px;
       bottom: 0px;
       content: " ";
       height: 0;
@@ -472,8 +467,17 @@ header.entry-header {
       opacity: 1;
     }
     &:hover img {
-      bottom: 3px;
-    }    
+      top: 46%;
+    }
+  }
+  img {
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: 0;
+    @include trans();
   }
   .owl-nav {
     position: absolute;
@@ -553,6 +557,72 @@ header.entry-header {
       }
     }
   }
+}
+
+///////////////////////////////////
+// Subpage Banner
+#banner {
+  position: relative;
+  .banner-filter {
+		@include trans();
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    top: 0;
+    height: 500px;
+  }
+  img {
+		overflow: hidden;
+		@include trans();
+    width: 100%;
+    position: fixed;
+    top: 89px;
+    left: 0;
+    z-index: -1;
+  }
+  .banner-caption {    
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    h1 {
+			@include trans();
+			position: relative;
+			width: 70%;
+      font-family: $font-1;
+      font-weight: 900;
+      letter-spacing: 1px;
+      word-spacing: 5px;
+      font-size: 60px;
+      opacity: 0.6;
+      line-height: 80px;
+      font-style: italic;
+      animation: 0.5s ease-in slideInFromLeft;
+    }
+  }
+}
+#content-area {
+  background: #fff;
+  position: relative;
+  p {
+    padding: 14px 0;
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 700px;
+    margin: 0 auto;
+    &:first-child {
+      padding: 80px 0 14px;
+    }
+    &:last-child {
+      padding: 14px 0 120px;
+    }
+  }
+}
+
+// Search
+.search .widget-area .search-form {
+  display: none;
 }
 
 ///////////////////////////////////
@@ -764,11 +834,57 @@ svg.hide {
 // ————————————————————————————————
 // Media Queries
 @media (max-width: 1200px) {
-	// Bootstrap Grid
+  #header {
+    li {
+      padding-top: 26px;
+    }
+    .menu-nav a {
+      font-size: 18px;
+      padding: 0 8px 28px;
+    }
+  }  
+  #hero .hero-caption h1 {
+    font-size: 74px;
+    line-height: 74px;
+  }
+  #cat-drops a {
+    padding: 24px 14px 24px 4px;
+  }
+  #companies {
+    a {
+      height: 250px;
+    }
+    img {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .owl-prev {
+      left: -55px;
+    }.owl-next {
+      right: -55px;
+    }
+  }
+  // Bootstrap Grid
 	.container {
 		width: 960px;
 	}
 	// END Bootstrap Grid
+}
+@media (max-width: 1060px) {
+  #companies {
+    .owl-nav {
+      position: relative;
+      top: initial;
+      bottom: -40px;
+      display: none;
+    }
+    .owl-prev {
+      left: 0px;
+    }
+    .owl-next {
+      right: 0px;
+    }
+  }
 }
 @media (max-width: 992px) {
 	// Bootstrap Grid

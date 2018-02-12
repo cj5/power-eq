@@ -34,23 +34,23 @@ get_header(); ?>
   <div class="container">
     <ul>
       <li class="section ib">
-        <a class="hov-boilers" href="/powereq">
+        <a class="hov-boilers" href="/">
           <svg class="icon icon-fire"><use xlink:href="#icon-fire"></use></svg>
           <p>Boilers</p><span></span>
         </a>
       </li>
       <li class="section ib">
-        <a class="hov-compressors" href="/powereq">
+        <a class="hov-compressors" href="/">
         <svg class="icon icon-meter"><use xlink:href="#icon-meter"></use></svg>
         <p>Compressors</p><span></span></a>            
       </li>  
       <li class="section ib">
-        <a class="hov-pumps" href="/powereq">
+        <a class="hov-pumps" href="/">
         <svg class="icon icon-cog"><use xlink:href="#icon-cog"></use></svg>
         <p>Pumps</p><span></span></a>            
       </li>  
       <li class="section ib">
-        <a class="hov-specialty" href="/powereq">
+        <a class="hov-specialty" href="/">
         <svg class="icon icon-cogs"><use xlink:href="#icon-cogs"></use></svg>
         <p>Specialty</p><span></span></a>            
       </li>

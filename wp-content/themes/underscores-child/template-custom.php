@@ -18,24 +18,25 @@ Template Name: Custom
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main container">
-
-			<?php
-			while ( have_posts() ) : the_post();
-
-				get_template_part( 'template-parts/content', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+<section id="banner">
+	<div class="banner-filter"></div>
+	<div class="banner-img-fill"></div>
+	<?php the_post_thumbnail(); ?>
+	<div class="banner-caption">
+		<div class="container">
+			<h1><?php echo the_title(); ?></h1>
+		</div>
+	</div>
+</section>
+<section id="content-area">
+	<div class="container">
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<?php the_content(); ?>
+		<?php endwhile; else : ?>
+			<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+		<?php endif; ?>
+	</div>
+</section>
 
 <?php
 
