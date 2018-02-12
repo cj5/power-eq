@@ -71,7 +71,7 @@
 	<header id="header">
 		<div class="container">
 			<div class="menu-logo ib">
-				<a href="/powereq"><img src="/wp-content/uploads/2018/02/lg-logo.png" alt=""></a>
+				<a href="/home"><img src="/wp-content/uploads/2018/02/lg-logo.png" alt=""></a>
 			</div>
 			<nav class="menu-nav ib">
 				<ul>

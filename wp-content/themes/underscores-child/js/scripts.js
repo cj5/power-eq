@@ -55,7 +55,22 @@ jQuery(document).ready(function($) {
   });
 
   // HERO IMG FILL
-  let heroHt = $('#hero img').height();
+  let heroHt = $('#hero img').height();  
+  if (heroHt === 0) {
+    console.log('hero ht: ', heroHt);
+    setTimeout(() => {
+      heroHt = $('#hero img').height();
+      console.log('hero ht timeout: ', heroHt);
+      $('.hero-img-fill').css('height', heroHt);
+      if (heroHt === 0) {
+        setTimeout(() => {
+          heroHt = $('#hero img').height();
+          console.log('hero ht timeout 2: ', heroHt);
+          $('.hero-img-fill').css('height', heroHt);
+        }, 2000);
+      }
+    }, 1000);
+  }
   $('.hero-img-fill').css('height', heroHt);
   
   // MISSION IMAGE FILTER SIZING
@@ -68,9 +83,9 @@ jQuery(document).ready(function($) {
   let locBorderString = $('#locations').css('border-width').split(' ');
   let locBorder = locBorderString.filter(x => x != ('0px'));
   let border = parseInt(locBorder, 10);
-  console.log('mapHt: ', mapHt);
-  console.log('locBorder: ', locBorder);
-  console.log('border: ', border);
+  // console.log('mapHt: ', mapHt);
+  // console.log('locBorder: ', locBorder);
+  // console.log('border: ', border);
   $('.map-filter').css('height', mapHt - border);
   $('#map').css('height', mapHt - border);
 
@@ -100,8 +115,14 @@ jQuery(document).ready(function($) {
   //////////////////////////////////
   // FUNCTION FIRES ON SCREEN RESIZE
   const updateContainer = () => {
+    // VP WIDTH STUFF
+    $('body').css('overflow-y', 'hidden');
+    let vpW = $(window).width();
+    console.log('vp width: ', vpW);
+    $('body').css('overflow-y', 'visible');
+
     // HERO IMG FILL
-    let heroHt = $('#hero img').height();
+    let heroHt = $('#hero img').height();    
     $('.hero-img-fill').css('height', heroHt);
     
     // MISSION IMAGE FILTER SIZING
@@ -114,9 +135,9 @@ jQuery(document).ready(function($) {
     let locBorderString = $('#locations').css('border-width').split(' ');
     let locBorder = locBorderString.filter(x => x != ('0px'));
     let border = parseInt(locBorder, 10);
-    console.log('mapHt: ', mapHt);
-    console.log('locBorder: ', locBorder);
-    console.log('border: ', border);
+    // console.log('mapHt: ', mapHt);
+    // console.log('locBorder: ', locBorder);
+    // console.log('border: ', border);
     $('.map-filter').css('height', mapHt - border);
     $('#map').css('height', mapHt - border);
   }
