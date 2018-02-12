@@ -87,5 +87,8 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8xo2ggOdKkh3Jue90Jppf9iDca7OlDMs&callback=initMap"
     async defer></script>
 
+    <!-- <script src="jquery.min.js"></script> -->
+    <script src="/wp-content/themes/underscores-child/owlcarousel/owl.carousel.min.js"></script>
+
 </body>
 </html>

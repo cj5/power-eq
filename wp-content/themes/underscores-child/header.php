@@ -21,6 +21,9 @@
 	
 	<link rel=icon href=/wp-content/uploads/2018/02/favicon.png type="image/png">
 
+	<link rel="stylesheet" href="/wp-content/themes/underscores-child/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="/wp-content/themes/underscores-child/owlcarousel/owl.theme.default.min.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400,500,700,900" rel="stylesheet">
 </head>
 

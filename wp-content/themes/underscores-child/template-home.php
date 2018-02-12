@@ -56,8 +56,8 @@ get_header(); ?>
           </li>
         </ul>
 			</div>
-			<!-- sub menus -->
-			<div class="sub-menu sub-menu-boilers">
+			<!-- SUB MENUS -->
+			<!-- <div class="sub-menu sub-menu-boilers">
 				<div class="sub-menu-border"></div>
 				<div class="container">
 					<ul>
@@ -113,7 +113,7 @@ get_header(); ?>
 						<li><a href="">Thrush</a></li>						
 					</ul>
 			</div>
-		</div>
+		</div> -->
 		<!-- END sub menus -->
     </section>
 
@@ -145,30 +145,43 @@ get_header(); ?>
     </section>
 
     <section id="companies">
-      <div class="container">
-
-      <!-- <div class="owl-carousel owl-theme">
-        <div class="item"><h4>1</h4></div>
-        <div class="item"><h4>2</h4></div>
-        <div class="item"><h4>3</h4></div>
-        <div class="item"><h4>4</h4></div>
-        <div class="item"><h4>5</h4></div>
-        <div class="item"><h4>6</h4></div>
-        <div class="item"><h4>7</h4></div>
-        <div class="item"><h4>8</h4></div>
-        <div class="item"><h4>9</h4></div>
-        <div class="item"><h4>10</h4></div>
-        <div class="item"><h4>11</h4></div>
-        <div class="item"><h4>12</h4></div>
-      </div> -->
+      <div class="container">      
 
         <h2><?php the_field('home_companies_heading'); ?></h2>
-        <ul>
+        <!-- OWL CAROUSEL -->
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <a><img src="/wp-content/uploads/2018/02/cleaver-brooks.png" alt=""></a>
+          </div>
+          <div class="item">
+            <a><img src="/wp-content/uploads/2018/02/viking-pumps.png" alt=""></a>
+          </div>
+          <div class="item">
+            <a><img src="/wp-content/uploads/2018/02/armstrong.png" alt=""></a>
+          </div>
+          <div class="item">
+            <a><img src="/wp-content/uploads/2018/02/gardner-denver.png" alt=""></a>
+          </div>
+          <div class="item">
+            <a><img src="/wp-content/uploads/2018/02/cleaver-brooks.png" alt=""></a>
+          </div>
+          <div class="item">
+            <a><img src="/wp-content/uploads/2018/02/viking-pumps.png" alt=""></a>
+          </div>
+          <div class="item">
+            <a><img src="/wp-content/uploads/2018/02/armstrong.png" alt=""></a>
+          </div>
+          <div class="item">
+            <a><img src="/wp-content/uploads/2018/02/gardner-denver.png" alt=""></a>
+          </div>
+        </div>
+
+        <!-- <ul>
           <li><a href="http://www.cleaverbrooks.com/" target="_blank"><img src="/wp-content/uploads/2018/02/cleaver-brooks.png" alt=""></a></li>
           <li><a href="http://www.vikingpump.com/" target="_blank"><img src="/wp-content/uploads/2018/02/viking-pumps.png" alt=""></a></li>
           <li><a href="https://www.armstronginternational.com" target="_blank"><img src="/wp-content/uploads/2018/02/armstrong.png" alt=""></a></li>
           <li><a href="http://www.gardnerdenver.com/en" target="_blank"><img src="/wp-content/uploads/2018/02/gardner-denver.png" alt=""></a></li>
-        </ul>
+        </ul> -->
       </div>
     </section>
 

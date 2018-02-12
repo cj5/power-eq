@@ -17,7 +17,8 @@ ul {
 }
 a {
 	text-decoration: none;
-	@include trans();
+  @include trans();
+  cursor: pointer;
 }
 p {
 	font-weight: 300;
@@ -455,14 +456,16 @@ header.entry-header {
     }
   }
   img {
-		width: 207px;
+    width: auto;
+    margin: 0 auto;
     position: relative;
     bottom: 0;
     @include trans();
   }
   a {
     display: inline-block;
-    padding: 80px 24px;    
+    width: 100%;
+    padding: 80px 0;
     border: 2px solid $color-main;
     position: relative;
     &:hover:after {
@@ -481,6 +484,84 @@ header.entry-header {
     &:hover img {
       bottom: 3px;
     }    
+  }
+  .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70px;
+    z-index: -1;
+    margin: 0;
+  }
+  .owl-prev, .owl-next {
+    width: 32px;
+    height: 70px; 
+    position:relative;
+    background: transparent;    
+    &:after, &:before {
+      content:'';
+      width:0;
+      height:0;
+      border-style:solid;
+      border-color:transparent;
+      position:absolute;
+      right:0px;
+    }
+  }
+  .owl-prev {
+    position: absolute;
+    left: -80px;
+    &:after, &:before {
+      border-top-width: 30px;
+      border-bottom-width: 30px;
+      border-right-width:25px;
+    }
+    &:before {
+      border-right-color: $color-main;
+      right:3px;
+    }
+    &:after {
+      border-right-color: #fff;
+      right:0px;
+    }
+    &:hover {      
+      border-color: $color-2;
+      &:before {
+        border-right-color: #fff;
+      }
+      &:after {
+        border-right-color: $color-2;
+        right: 3px;
+      }
+    }
+  }
+  .owl-next {
+    position: absolute;
+    right: -80px;
+    &:after, &:before {
+      border-top-width: 30px;
+      border-bottom-width: 30px;
+      border-left-width:25px;
+    }
+    &:before {
+      border-left-color: $color-main;
+      left: 3px;
+    }
+    &:after {
+      border-left-color: #fff;
+      left: 0px;
+    }
+    &:hover {      
+      border-color: $color-2;
+      &:before {
+        border-left-color: #fff;
+      }
+      &:after {
+        border-left-color: $color-2;
+        left: 3px;
+      }
+    }
   }
 }
 

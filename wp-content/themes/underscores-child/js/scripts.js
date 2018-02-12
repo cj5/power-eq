@@ -79,18 +79,23 @@ jQuery(document).ready(function($) {
     loop:true,
     margin:10,
     nav:true,
+    navText:['',''],
+    margin: 20,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 2500,
     responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:4
-        }
+    0:{
+      items: 1
+    },
+    600:{
+      items: 2
+    },
+    1000:{            
+      items: 4
     }
-})
+  }
+});
 
   //////////////////////////////////
   // FUNCTION FIRES ON SCREEN RESIZE
