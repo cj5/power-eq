@@ -151,28 +151,52 @@ get_header(); ?>
         <!-- OWL CAROUSEL -->
         <div class="owl-carousel owl-theme">
           <div class="item">
-            <a><img src="/wp-content/uploads/2018/02/cleaver-brooks.png" alt=""></a>
+            <a href="<?php the_field('company_1_url'); ?>" target="_blank" title="">
+              <?php $company1Logo = get_field('company_1_logo'); ?>
+              <img src="<?php echo $company1Logo['url']; ?>" alt="<?php echo $company1Logo['alt']; ?>">
+            </a>
           </div>
           <div class="item">
-            <a><img src="/wp-content/uploads/2018/02/viking-pumps.png" alt=""></a>
+            <a href="<?php the_field('company_2_url'); ?>" target="_blank" title="">
+              <?php $company2Logo = get_field('company_2_logo'); ?>
+              <img src="<?php echo $company2Logo['url']; ?>" alt="<?php echo $company2Logo['alt']; ?>">
+            </a>
           </div>
           <div class="item">
-            <a><img src="/wp-content/uploads/2018/02/armstrong.png" alt=""></a>
+            <a href="<?php the_field('company_3_url'); ?>" target="_blank" title="">
+              <?php $company3Logo = get_field('company_3_logo'); ?>
+              <img src="<?php echo $company3Logo['url']; ?>" alt="<?php echo $company3Logo['alt']; ?>">
+            </a>
           </div>
           <div class="item">
-            <a><img src="/wp-content/uploads/2018/02/gardner-denver.png" alt=""></a>
+            <a href="<?php the_field('company_4_url'); ?>" target="_blank" title="">
+              <?php $company4Logo = get_field('company_4_logo'); ?>
+              <img src="<?php echo $company4Logo['url']; ?>" alt="<?php echo $company4Logo['alt']; ?>">
+            </a>
           </div>
           <div class="item">
-            <a><img src="/wp-content/uploads/2018/02/cleaver-brooks.png" alt=""></a>
+            <a href="<?php the_field('company_5_url'); ?>" target="_blank" title="">
+              <?php $company5Logo = get_field('company_5_logo'); ?>
+              <img src="<?php echo $company5Logo['url']; ?>" alt="<?php echo $company5Logo['alt']; ?>">
+            </a>
           </div>
           <div class="item">
-            <a><img src="/wp-content/uploads/2018/02/viking-pumps.png" alt=""></a>
+            <a href="<?php the_field('company_6_url'); ?>" target="_blank" title="">
+              <?php $company6Logo = get_field('company_6_logo'); ?>
+              <img src="<?php echo $company6Logo['url']; ?>" alt="<?php echo $company6Logo['alt']; ?>">
+            </a>
           </div>
           <div class="item">
-            <a><img src="/wp-content/uploads/2018/02/armstrong.png" alt=""></a>
+            <a href="<?php the_field('company_7_url'); ?>" target="_blank">
+              <?php $company7Logo = get_field('company_7_logo'); ?>
+              <img src="<?php echo $company7Logo['url']; ?>" alt="<?php echo $company7Logo['alt']; ?>">
+            </a>
           </div>
           <div class="item">
-            <a><img src="/wp-content/uploads/2018/02/gardner-denver.png" alt=""></a>
+            <a href="<?php the_field('company_8_url'); ?>" target="_blank" title="">
+              <?php $company8Logo = get_field('company_8_logo'); ?>
+              <img src="<?php echo $company8Logo['url']; ?>" alt="<?php echo $company8Logo['alt']; ?>">
+            </a>
           </div>
         </div>
 
