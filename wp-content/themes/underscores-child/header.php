@@ -73,7 +73,7 @@
 			<div class="menu-logo ib">
 				<a href="/home"><img src="/wp-content/uploads/2018/02/lg-logo.png" alt=""></a>
 			</div>
-			<nav class="menu-nav ib">
+			<nav class="menu-nav ib desktop-nav">
 				<ul>
 					<li><a href="/">Home</a></li>
 					<li><a href="/rentals">Rentals</a></li>
@@ -84,9 +84,15 @@
 					<li><a href="" class="hov-search"><img class="search-icon" src="/wp-content/uploads/2018/02/search-icon-1.png"></a></li>
 				</ul>
 			</nav>			
+			<!-- START mobile nav -->
+			<div class="mobile-nav-wrapper">
+				<a href="" class="hov-search"><img class="search-icon" src="/wp-content/uploads/2018/02/search-icon-1.png"></a>
+				<div class="navicon">&#9776;</div>				
+			</div>
+			<!-- END mobile nav -->			
 		</div>
 		<!-- sub menus -->
-		<div class="sub-menu sub-menu-equip">
+		<div class="sub-menu sub-menu-equip desktop-nav">
 			<div class="sub-menu-border"></div>
 			<div class="container">
 				<ul>
@@ -98,7 +104,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="sub-menu sub-menu-service">
+		<div class="sub-menu sub-menu-service desktop-nav">
 			<div class="sub-menu-border"></div>
 			<div class="container hov-service">
 				<ul>
@@ -109,7 +115,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="sub-menu sub-menu-search">
+		<div class="sub-menu sub-menu-search desktop-nav">
 			<div class="sub-menu-border"></div>
 			<div class="container">
 				<?php get_search_form(); ?>
