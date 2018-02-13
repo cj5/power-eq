@@ -19,8 +19,21 @@
     font-size: 74px;
     line-height: 74px;
   }
-  #cat-drops a {
-    padding: 24px 14px 24px 4px;
+  #cat-drops {
+    .icon {
+      width: 40px;
+      height: 40px;
+    }
+    a {
+      padding: 20px 27px 17px 17px;
+      &:hover p {
+        bottom: 14px;
+      }
+    }
+    p {
+      font-size: 20px;
+      bottom: 11px;      
+    }
   }
   #companies {
     a {
@@ -121,17 +134,17 @@
   }
   #cat-drops { 
     .icon {
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
     }
     a {
-      padding: 16px 22px 8px 17px;
+      padding: 16px 27px 8px 22px;
       text-align: center;
       margin: 0;
     }
     p {
       width: 100%;
-      margin-top: 10px;
+      margin-top: 8px;
       font-size: 20px;
       padding: 0;
     }
@@ -239,8 +252,12 @@
     top: 73px;
   }
   #cat-drops {
+    ul {
+      overflow: hidden;
+      height: 77px;
+    }
     a {
-      padding: 14px 19px 0px 10px;
+      padding: 10px 19px 0px 10px;
       &:hover:after {
         border-left: solid transparent 0px;
         border-right: solid transparent 0px;
@@ -250,7 +267,7 @@
         bottom: 0px;      
       }
       &:hover p {
-        bottom: 14px;      
+        bottom: 11px;        
       }
     }
     .icon {
@@ -259,6 +276,7 @@
     }
     p {
       font-size: 14px;
+      margin-top: 6px;
     }
   }
   #about {
@@ -350,6 +368,7 @@
   }
   #cat-drops {
     ul {
+      height: 70px;
       text-align: center;
     }
     a {
@@ -362,6 +381,12 @@
   }
   #about {
     padding: 40px 0;
+    h2 {
+      margin-bottom: 20px;
+    }
+    .right {
+      margin-bottom: 40px;
+    }
   }
   #mission {
     .content {
@@ -384,26 +409,27 @@
 
 //~~~~~~~~~~~~~~~~~~~ 460px
 @media (max-width: 460px) {
-	#header img {
-    width: 180px;
-  }
   #hero .hero-caption h1 {
-    font-size: 21px;
-    line-height: 21px;
+    font-size: 28px;
+    line-height: 28px;
   }
   #cat-drops {
+    background: #fff;
+    border: none;
+    padding-top: 20px;
+    ul {
+      height: auto;
+    }
     .section {
       width: 100%;
     }
     li {
       border-right: none;
-      border-bottom: 1px solid #fff;
-      &:last-child {
-        border-bottom: none;
-      }
     }
-    a {
+    a {      
       width: 100%;
+      background: #ddd;
+      margin-bottom: 10px;
     }
     p {
       width: auto;
@@ -411,11 +437,21 @@
       position: relative;
       transform: translateY(25%);
     }
-  }  
+  }
+  #companies {
+    padding: 40px 0 60px;
+  }
 }
 
 //~~~~~~~~~~~~~~~~~~~ 420px
 @media (max-width: 420px) {
+  #header img {
+    width: 180px;
+  }
+  #hero .hero-caption h1 {
+    font-size: 21px;
+    line-height: 21px;
+  }
   // footer
   #locations .locations {
     li {
