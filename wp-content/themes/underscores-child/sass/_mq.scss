@@ -1,0 +1,435 @@
+// ————————————————————————————————
+// MEDIA QUERIES
+
+//~~~~~~~~~~~~~~~~~~~ 1200px
+@media (max-width: 1200px) {
+  #header {
+    li {
+      padding-top: 26px;
+    }
+    .menu-nav a {
+      font-size: 18px;
+      padding: 0 8px 28px;
+    }
+    .sub-menu li a {
+      font-size: 18px;
+    }
+  }  
+  #hero .hero-caption h1 {
+    font-size: 74px;
+    line-height: 74px;
+  }
+  #cat-drops a {
+    padding: 24px 14px 24px 4px;
+  }
+  #companies {
+    a {
+      height: 250px;
+    }
+    img {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .owl-prev {
+      left: -55px;
+    }.owl-next {
+      right: -55px;
+    }
+  }
+  #locations {
+    .locations {
+      a {
+        font-size: 16px;
+      }
+      .loc-w {
+        width: 270px;
+      }      
+    }
+  }
+  // Bootstrap Grid
+	.container {
+		width: 960px;
+	}
+	// END Bootstrap Grid
+}
+
+//~~~~~~~~~~~~~~~~~~~ 1060px
+@media (max-width: 1060px) {
+  #companies {
+    .owl-nav {
+      position: relative;
+      top: initial;
+      bottom: -40px;
+      display: none;
+    }
+    .owl-prev {
+      left: 0px;
+    }
+    .owl-next {
+      right: 0px;
+    }
+  }
+}
+
+//~~~~~~~~~~~~~~~~~~~ 992px
+@media (max-width: 992px) {
+  h2 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .left {
+    width: 100%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+    padding: 0;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  #header {
+    .mobile-nav-wrapper {
+      display: inline-block;
+      float: right;
+      position: relative;
+      height: 83px;
+      a {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 14px; 
+        display: inline-block;        
+      }
+      .navicon {
+        display: inline-block;
+        float: right;
+        color: #fff;
+        font-size: 30px;
+        position: relative;
+        padding: 19px 0;
+        cursor: pointer;
+      }
+    }
+  }
+  #hero .hero-caption h1 {
+    font-size: 54px;
+    line-height: 54px;
+  }
+  #cat-drops { 
+    .icon {
+      width: 40px;
+      height: 40px;
+    }
+    a {
+      padding: 16px 22px 8px 17px;
+      text-align: center;
+      margin: 0;
+    }
+    p {
+      width: 100%;
+      margin-top: 10px;
+      font-size: 20px;
+      padding: 0;
+    }
+  }
+  #companies {
+    padding: 80px 0 100px;
+  }
+  #about {
+    padding: 80px 0;
+    .left {
+      display: none;
+    }
+    .right {
+      margin-bottom: 60px;
+    }
+    .left-under {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      img {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    }
+  }
+  #mission {
+    h2 {
+      margin-bottom: 26px;
+    }
+  }
+  // footer
+  #locations {
+    padding: 0;
+    .locations {
+      width: 100%;
+      padding: 40px 0;
+      a {
+        font-size: 18px;
+      }
+      .loc-w {
+        width: auto;
+      }
+      .phone {
+        float: right;
+      }
+    }
+    .map {
+      border-top: 3px solid $color-main;
+      position: relative;
+      width: 100%;
+      height: 300px;
+    }
+  }
+  #footer {
+    .copyright {
+      p {
+        line-height: 20px;
+      }
+    }
+    .emergency h4 {
+      font-size: 14px;
+    }
+  }
+  .credit {
+    display: inline-block;
+    width: 100%;
+    border-left: 0 solid #fff;
+    margin-left: 0;
+    padding-left: 0;
+  } 
+  // Bootstrap Grid
+	.container {
+		width: 720px;
+	}
+	// END Bootstrap Grid
+}
+
+//~~~~~~~~~~~~~~~~~~~ 768px
+@media (max-width: 768px) {
+  h2 {
+    font-size: 22px;
+  }
+  .header-fill {
+    height: 73px;
+  }
+  #header {
+    img {
+      width: 220px;
+    }
+    .mobile-nav-wrapper {
+      height: 67px;
+      a {
+        top: 51%;
+      }
+      .navicon {
+        padding: 11px 0;
+      }
+    }
+  }
+  #hero .hero-caption h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  #hero img {
+    top: 73px;
+  }
+  #cat-drops {
+    a {
+      padding: 14px 19px 0px 10px;
+      &:hover:after {
+        border-left: solid transparent 0px;
+        border-right: solid transparent 0px;
+        border-bottom: solid $color-2 0px;      
+      }
+      &:hover svg {
+        bottom: 0px;      
+      }
+      &:hover p {
+        bottom: 14px;      
+      }
+    }
+    .icon {
+      width: 30px;
+      height: 30px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  #about {
+    padding: 60px 0;
+  }
+  #mission {
+    .content {
+      max-width: 540px;
+    }
+  }
+  #companies {
+    padding: 60px 0 80px;
+    a {
+      height: 190px;
+      &:hover:after {
+        border-left: solid transparent 0px;
+        border-right: solid transparent 0px;
+        border-bottom: solid $color-2 0px;      
+      }
+      &:hover img {
+        top: 50%;
+      }
+    }
+  }
+  #locations {
+    .map {
+      height: 200px;
+    }
+  }
+  #footer {
+    .wrapper {
+      padding: 40px 0;
+    }
+    .emergency {
+      position: relative;
+      left: inherit;
+      top: inherit;
+      transform: none;
+      text-align: inherit;
+      width: 100%;
+    }
+    .social-mobile {
+      position: relative;
+      display: inline-block;
+      margin-top: 50px;
+      left: inherit;
+      top: inherit;
+      transform: none;
+      text-align: inherit;
+      width: 100%;
+      li:last-child {
+        margin-right: 12px;
+      }
+    }
+    .copyright {
+      width: 100%;
+      margin-top: 50px;
+    }
+    .social {
+      display: none;
+    }    
+  }
+  .credit {
+    width: auto;
+    border-left: 1px solid #fff;
+    margin-left: 7px;
+    padding-left: 7px;
+  }
+  // Bootstrap Grid
+	.container {
+		width: 540px;
+	}
+	// END Bootstrap Grid
+}
+
+//~~~~~~~~~~~~~~~~~~~ 576px
+@media (max-width: 576px) {
+  h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  #hero .hero-caption h1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  #cat-drops {
+    ul {
+      text-align: center;
+    }
+    a {
+      padding: 10px 8px 0 4px;      
+    }
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  #about {
+    padding: 40px 0;
+  }
+  #mission {
+    .content {
+      width: 100%;
+      padding: 40px 30px 50px 24px;
+    }
+  }
+  #companies a {
+    height: 164px;
+  }
+  #locations .locations a {
+    font-size: 14px;
+  }
+  // Bootstrap Grid  
+  .container {
+		width: auto;
+	}
+	// END Bootstrap Grid
+}
+
+//~~~~~~~~~~~~~~~~~~~ 460px
+@media (max-width: 460px) {
+	#header img {
+    width: 180px;
+  }
+  #hero .hero-caption h1 {
+    font-size: 21px;
+    line-height: 21px;
+  }
+  #cat-drops {
+    .section {
+      width: 100%;
+    }
+    li {
+      border-right: none;
+      border-bottom: 1px solid #fff;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    a {
+      width: 100%;
+    }
+    p {
+      width: auto;
+      margin: 0 0 0 10px;
+      position: relative;
+      transform: translateY(25%);
+    }
+  }  
+}
+
+//~~~~~~~~~~~~~~~~~~~ 420px
+@media (max-width: 420px) {
+  // footer
+  #locations .locations {
+    li {
+      overflow: hidden;
+    }
+    a {
+      width: 100%;
+      line-height: 26px;
+    }
+  }
+  .credit {
+    width: 100%;
+    border-left: 0px solid #fff;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}

@@ -107,6 +107,10 @@ jQuery(document).ready(function($) {
   // console.log('border: ', border);
   $('.map-filter').css('height', mapHt - border);
   $('#map').css('height', mapHt - border);
+  if (vpW < 993) {
+    let locHt = $('.locations').outerHeight(true);
+    $('#map').css('height', (mapHt - border) - locHt);
+  }
 
   // OWL CAROUSEL
   $('.owl-carousel').owlCarousel({
@@ -120,8 +124,8 @@ jQuery(document).ready(function($) {
     autoplayTimeout: 2500,
     // autoplayHoverPause: true,
     responsive:{
-      0:{ items: 1 },
-      600:{ items: 2 },
+      0:{ items: 2 },
+      460:{ items: 3 },
       768:{ items: 3 },
       1000:{ items: 4 }
     }
@@ -160,6 +164,10 @@ jQuery(document).ready(function($) {
     // console.log('border: ', border);
     $('.map-filter').css('height', mapHt - border);
     $('#map').css('height', mapHt - border);
+    if (vpW < 993) {
+      let locHt = $('.locations').outerHeight(true);
+      $('#map').css('height', (mapHt - border) - locHt);
+    }
   }
 
   $(window).resize(function() {

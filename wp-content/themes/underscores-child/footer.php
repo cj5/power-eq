@@ -21,19 +21,19 @@
         <li>
           <!-- LOCATION 1 -->
           <a href="https://goo.gl/maps/3KSbkGNvk8P2" class="mg-md-rt loc-w" target="_blank"><svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg>Memphis, TN – Corporate Office
-          </a><a href=""><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>901-327-8261</a>
+          </a><a href="" class="phone"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>901-327-8261</a>
         </li>
         <li>
           <!-- LOCATION 2 -->
-          <a href="https://goo.gl/maps/mzLrxYgZBf82" class="mg-md-rt loc-w" target="_blank"><svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg>Little Rock, Arkansas</a><a href=""><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>501-758-7148</a>
+          <a href="https://goo.gl/maps/mzLrxYgZBf82" class="mg-md-rt loc-w" target="_blank"><svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg>Little Rock, Arkansas</a><a href="" class="phone"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>501-758-7148</a>
         </li>
         <li>
           <!-- LOCATION 3 -->
-          <a href="#" class="no-link mg-md-rt loc-w"><svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg>Tri-Cities, Tennessee</a><a href=""><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>423-484-3220</a>
+          <a href="#" class="no-link mg-md-rt loc-w"><svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg>Tri-Cities, Tennessee</a><a href="" class="phone"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>423-484-3220</a>
         </li>
         <li>
           <!-- LOCATION 4 -->
-          <a href="#" class="no-link mg-md-rt loc-w"><svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg>Tupelo, Mississippi</a><a href=""><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>662-231-9415</a>
+          <a href="#" class="no-link mg-md-rt loc-w"><svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg>Tupelo, Mississippi</a><a href="" class="phone"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>662-231-9415</a>
         </li>
       </ul>
       </div>        
@@ -53,13 +53,26 @@
             <h4>24/7 Emergency Service</h4>
             <a href=""><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg><span>662-231-9415</span></a>
           </div>
+          <div class="social-mobile ib">
+            <ul>
+              <li><a href="">
+                <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+              </a></li>
+              <li><a href="">
+                <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+              </a></li>
+              <li><a href="">
+                <svg class="icon icon-vimeo"><use xlink:href="#icon-vimeo"></use></svg>
+              </a></li>
+            </ul>
+          </div>
           <div class="copyright ib">
             <ul>
               <li><a href="">Contact</a></li>
               <li><a href="">Privacy</a></li>
               <li><a href="">Sitemap</a></li>
             </ul>
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> Power Equipment Company &nbsp;|&nbsp;  <i>Web Design:</i>&nbsp;&nbsp;<a href="http://chrisstack.co" target="_blank">chrisstack.co</a></p>
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Power Equipment Company   <span class="credit"><i>Web Design:</i>&nbsp;&nbsp;<a href="http://chrisstack.co" target="_blank">chrisstack.co</a></span></p>
           </div>
           <div class="social ib">
             <ul>

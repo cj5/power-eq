@@ -129,6 +129,11 @@ get_header(); ?>
         <h2><?php the_field('home_about_heading'); ?></h2>
         <p><?php the_field('home_about_content'); ?></p>
       </div>
+      <div class="left-under ib">
+        <?php 
+        $homeAboutImage = get_field('home_about_image'); ?>
+        <img src="<?php echo $homeAboutImage['url']; ?>" alt="<?php echo $homeAboutImage['alt']; ?>" >
+      </div>
     </div>
   </div> 
 </section>
