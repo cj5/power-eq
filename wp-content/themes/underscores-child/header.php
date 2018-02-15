@@ -60,6 +60,10 @@
 		<symbol id="icon-phone" viewBox="0 0 32 32">
 			<path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
 		</symbol>
+
+		<symbol id="icon-x" viewBox="0 0 24 24">		
+		<path d="M13.4 12l5.3-5.3c0.4-0.4 0.4-1 0-1.4s-1-0.4-1.4 0l-5.3 5.3-5.3-5.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4l5.3 5.3-5.3 5.3c-0.4 0.4-0.4 1 0 1.4 0.2 0.2 0.4 0.3 0.7 0.3s0.5-0.1 0.7-0.3l5.3-5.3 5.3 5.3c0.2 0.2 0.5 0.3 0.7 0.3s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4l-5.3-5.3z"></path>
+		</symbol>
 	</defs>
 </svg>
 
@@ -84,12 +88,23 @@
 					<li><a href="/contact">Contact</a></li>
 					<li><a href="" class="hov-search"><img class="search-icon" src="/wp-content/uploads/2018/02/search-icon-1.png"></a></li>
 				</ul>
-			</nav>			
+			</nav>
 			<!-- START mobile nav -->
 			<div class="mobile-nav-wrapper">
 				<a href="" class="hov-search"><img class="search-icon" src="/wp-content/uploads/2018/02/search-icon-1.png"></a>
 				<div class="navicon">&#9776;</div>				
 			</div>
+			<nav class="mobile-nav menu-nav">				
+				<ul>
+					<li><a class="close"><svg class="icon icon-x"><use xlink:href="#icon-x"></use></svg></a></li>
+					<li><a href="/">Home</a></li>
+					<li><a href="/rentals">Rentals</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/equipment" class="">Equipment</a></li>
+					<li><a href="/services" class="">Services</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>				
+			</nav>
 			<!-- END mobile nav -->			
 		</div>
 		<!-- sub menus -->

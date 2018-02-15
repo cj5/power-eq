@@ -27,6 +27,8 @@ p {
   line-height: 36px;
 }
 body {
+  @include trans();
+  position: relative;
 	animation: 1.0s ease-in-out fadeIn;
 	color: #555;
 	font-family: $font-1;
@@ -70,6 +72,7 @@ body {
   width: 100%;
 }
 #header {
+  @include trans();
   position: fixed;
   top: 0;
   left: 0;

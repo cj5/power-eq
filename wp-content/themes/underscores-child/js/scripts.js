@@ -131,6 +131,20 @@ jQuery(document).ready(function($) {
     }
   });
 
+  // MOBILE NAV POSITIONING
+  $('.navicon').click(function() {
+    $('.mobile-nav').css('right', 0);
+    $('body').css('right', 250);
+    $('#header').css('left', -250);
+    $('#hero img').css('left', -250);    
+  });
+  $('.close').click(function() {
+    $('.mobile-nav').css('right', -250);
+    $('body').css('right', 0);
+    $('#header').css('left', 0);
+    $('#hero img').css('left', 0);
+  });    
+
   //////////////////////////////////
   // FUNCTION FIRES ON SCREEN RESIZE
   const updateContainer = () => {

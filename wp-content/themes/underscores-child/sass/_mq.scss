@@ -127,6 +127,54 @@
         cursor: pointer;
       }
     }
+    .mobile-nav {
+      @include trans();
+      position: fixed;
+      z-index: 999;
+      width: 250px;
+      height: 100%;
+      top: 0;
+      right: -250px;
+      background: $color-main;
+      border-left: 6px solid #aaa;
+      ul {        
+        li {
+          padding: 0;
+          display: block;
+          border-bottom: 2px solid #aaa;
+          &:first-child {
+            border-bottom: 6px solid #aaa;
+          }
+          &:last-child {
+            border-bottom: 0;
+          }
+          a {
+            padding: 20px 0 20px 20px;
+            margin: 0;
+            width: 100%;
+            &:hover:after {
+              border-left: 0px;
+              border-right: 0px;
+              border-bottom: 0px;
+              bottom: 0px;
+              content: " ";
+              height: 0;
+              left: 50%;
+              margin-left: -20px;
+              position: absolute;
+              width: 0;
+            }
+            .icon {
+              width: 30px;
+              height: 30px;
+            }            
+          }
+          a.close {
+            padding: 23px 0 23px 15px;
+          }        
+        }
+      }
+    }
   }
   #hero .hero-caption h1 {
     font-size: 54px;
