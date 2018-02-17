@@ -109,6 +109,9 @@ body {
       width: 0;
     }
   }
+  .mobile-nav {
+    display: none;
+  }
   .search-icon {
     width: 22px;
     position: relative;
@@ -175,7 +178,7 @@ body {
 	}
 }
 .sub-menu-search {
-	text-align: right;
+  text-align: right;
 	input {
 		margin: 10px 0 14px;
 	}

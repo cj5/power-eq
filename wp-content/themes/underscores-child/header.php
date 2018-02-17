@@ -86,12 +86,12 @@
 					<li><a href="/equipment" class="hov-equip">Equipment</a></li>
 					<li><a href="/services" class="hov-service">Services</a></li>
 					<li><a href="/contact">Contact</a></li>
-					<li><a href="" class="hov-search"><img class="search-icon" src="/wp-content/uploads/2018/02/search-icon-1.png"></a></li>
+					<li><a href="#" class="hov-search"><img class="search-icon" src="/wp-content/uploads/2018/02/search-icon-1.png"></a></li>
 				</ul>
 			</nav>
 			<!-- START mobile nav -->
 			<div class="mobile-nav-wrapper">
-				<a href="" class="hov-search"><img class="search-icon" src="/wp-content/uploads/2018/02/search-icon-1.png"></a>
+				<a href="#"><img class="search-open" src="/wp-content/uploads/2018/02/search-icon-1.png"></a>
 				<div class="navicon">&#9776;</div>				
 			</div>
 			<nav class="mobile-nav menu-nav">				

@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+  console.log('test 2');
 
   // VP WIDTH STUFF
   $('body').css('overflow-y', 'hidden');
@@ -133,17 +134,45 @@ jQuery(document).ready(function($) {
 
   // MOBILE NAV POSITIONING
   $('.navicon').click(function() {
+    // console.log('clicked navicon', $('.mobile-nav').css('right'));
     $('.mobile-nav').css('right', 0);
     $('body').css('right', 250);
     $('#header').css('left', -250);
-    $('#hero img').css('left', -250);    
+    $('#hero img').css('left', -250);
   });
   $('.close').click(function() {
     $('.mobile-nav').css('right', -250);
     $('body').css('right', 0);
     $('#header').css('left', 0);
     $('#hero img').css('left', 0);
-  });    
+  });
+  $('html').click(function() {
+    // console.log('clicked html', $('.mobile-nav').css('right'));
+    if ($('.mobile-nav').css('right') === '0px') {      
+      $('.mobile-nav').css('right', -250);
+      $('body').css('right', 0);
+      $('#header').css('left', 0);
+      $('#hero img').css('left', 0);
+    }
+  });  
+  $('.mobile-nav').click(function(e) {
+    e.stopPropagation();
+  });
+
+  // MOBILE SEARCH DISPLAY
+  if (vpW <= 992) {
+    $('.search-open').click(function() {      
+      $('.sub-menu-search').css('display', 'block');
+    });
+    $('html').click(function() {      
+      if ($('.sub-menu-search').css('display') === 'block') {
+        $('.sub-menu-search').css('display', 'none');
+      }
+    });
+    $('.sub-menu-search, .search-open').click(function(e) {
+      e.stopPropagation();
+    });
+  }
 
   //////////////////////////////////
   // FUNCTION FIRES ON SCREEN RESIZE
@@ -153,6 +182,21 @@ jQuery(document).ready(function($) {
     let vpW = $(window).width();
     console.log('vp width: ', vpW);
     $('body').css('overflow-y', 'visible');
+
+    // MOBILE SEARCH DISPLAY
+    if (vpW <= 992) {
+      $('.search-open').click(function() {      
+        $('.sub-menu-search').css('display', 'block');
+      });
+      $('html').click(function() {      
+        if ($('.sub-menu-search').css('display') === 'block') {
+          $('.sub-menu-search').css('display', 'none');
+        }
+      });
+      $('.sub-menu-search, .search-open').click(function(e) {
+        e.stopPropagation();
+      });
+    }
 
     // HERO IMG FILL
     let heroHt = $('#hero img').height();    
