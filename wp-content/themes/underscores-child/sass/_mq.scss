@@ -299,6 +299,9 @@
       padding: 15px 0 15px 15px;
     }
   }
+  .sub-menu {
+    top: 73px;
+  }
   #hero .hero-caption h1 {
     font-size: 40px;
     line-height: 40px;
@@ -417,6 +420,9 @@
     font-size: 14px;
     line-height: 24px;
   }
+  input.search-field {
+    width: 300px;
+  }
   #hero .hero-caption h1 {
     font-size: 32px;
     line-height: 32px;
@@ -467,6 +473,9 @@
 
 //~~~~~~~~~~~~~~~~~~~ 460px
 @media (max-width: 460px) {
+  input.search-field {
+    width: 200px;
+  }
   #hero .hero-caption h1 {
     font-size: 28px;
     line-height: 28px;

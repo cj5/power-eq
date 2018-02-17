@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-  console.log('test 2');
+  console.log('test 3');
 
   // VP WIDTH STUFF
   $('body').css('overflow-y', 'hidden');
