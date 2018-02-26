@@ -60,6 +60,9 @@ body {
 .right {
 	padding-left: 30px;
 }
+.no-margin {
+  margin: 0 !important;
+}
 .hide {
   display: none;
 }
@@ -194,7 +197,8 @@ input.search-field {
 	margin-bottom: 18px;
 	position: relative;
 	right: -4px;
-	border: 3px solid #aaa;
+  border: 3px solid #aaa;
+  border-radius: 0;
 	color: $color-main;
 	&:focus {
 		border: 3px solid $color-main;
@@ -614,17 +618,58 @@ header.entry-header {
 #content-area {
   background: #fff;
   position: relative;
-  p {
-    padding: 14px 0;
-    font-size: 18px;
-    line-height: 32px;
-    max-width: 700px;
-    margin: 0 auto;
-    &:first-child {
-      padding: 80px 0 14px;
+  padding: 80px 0 100px 0;
+  .content {    
+    width: 70%;
+    // max-width: 700px;
+    h3 {
+      margin: 40px 0 14px;
     }
-    &:last-child {
-      padding: 14px 0 120px;
+    p {    
+      padding: 14px 0;
+      font-size: 18px;
+      line-height: 32px;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+  .sidebar {
+    // border-left: 2px solid #ddd;
+    border: 6px solid #ddd;
+    // background: #eee;
+    // box-shadow: 0 0 10px #ddd;
+    width: 22%;
+    margin-left: 8%;
+    float: right;
+    padding: 26px 26px 26px 26px;
+    text-align: center;
+    h3 {
+      font-size: 26px;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid $color-2;
+    }
+    ul {
+      margin-bottom: 70px;
+    }
+    li {      
+      margin: 20px 0;
+      &:first-child, &:last-child {
+        margin: 0;
+      }
+    }
+    a {
+      font-family: $font-2;
+      color: $color-main;
+      font-size: 22px;
+      text-transform: uppercase;
+      &:hover {
+        color: $color-2;
+      }    
+    }
+    .owl-sidebar {
+      margin-top: 26px;
     }
   }
 }

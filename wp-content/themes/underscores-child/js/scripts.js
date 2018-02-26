@@ -114,7 +114,7 @@ jQuery(document).ready(function($) {
   }
 
   // OWL CAROUSEL
-  $('.owl-carousel').owlCarousel({
+  $('.owl-companies').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -129,6 +129,20 @@ jQuery(document).ready(function($) {
       460:{ items: 3 },
       768:{ items: 3 },
       1000:{ items: 4 }
+    }
+  });
+  $('.owl-sidebar').owlCarousel({
+    loop:true,
+    margin:10,
+    nav: false,
+    navText:['',''],
+    margin: 18,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    // autoplayHoverPause: true,
+    responsive:{
+      0:{ items: 1 }
     }
   });
 

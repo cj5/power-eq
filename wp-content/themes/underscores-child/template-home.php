@@ -155,7 +155,7 @@ get_header(); ?>
     <h2><?php the_field('home_companies_heading'); ?></h2>
     
     <!-- OWL CAROUSEL -->
-    <div class="owl-carousel owl-theme">
+    <div class="owl-carousel owl-companies owl-theme">
       <div class="item">
         <a href="<?php the_field('company_1_url'); ?>" target="_blank">
           <?php $company1Logo = get_field('company_1_logo'); ?>

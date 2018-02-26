@@ -184,6 +184,9 @@
     font-size: 54px;
     line-height: 54px;
   }
+  #banner .banner-caption h1 {
+    font-size: 50px;
+  }
   #cat-drops { 
     .icon {
       width: 30px;
@@ -250,6 +253,12 @@
       height: 300px;
     }
   }
+  #content-area p:first-child {
+    padding: 60px 0 14px;
+  }
+  #content-area p:last-child {
+    padding: 14px 0 100px;
+  }
   #footer {
     .copyright {
       p {
@@ -308,6 +317,13 @@
   }
   #hero img {
     top: 73px;
+  }
+  #banner img {
+    top: 73px;
+  }
+
+  #banner .banner-caption h1 {
+    font-size: 34px;
   }
   #cat-drops {
     ul {
@@ -427,6 +443,10 @@
     font-size: 32px;
     line-height: 32px;
   }
+
+  #banner .banner-caption h1 {
+    font-size: 26px;
+  }
   #cat-drops {
     ul {
       height: 70px;
@@ -464,6 +484,13 @@
   #locations .locations a {
     font-size: 14px;
   }
+
+  #content-area p:first-child {
+    padding: 40px 0 14px;
+  }
+  #content-area p:last-child {
+    padding: 14px 0 80px;
+  }
   // Bootstrap Grid  
   .container {
 		width: auto;
@@ -479,6 +506,10 @@
   #hero .hero-caption h1 {
     font-size: 28px;
     line-height: 28px;
+  }
+
+  #banner .banner-caption h1 {
+    font-size: 18px;
   }
   #cat-drops {
     background: #fff;
