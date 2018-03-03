@@ -70,8 +70,35 @@ get_header(); ?>
 					</a>
 				</div>
     	</div>
-
 		</div>
+
+		<div class="tablet-carousel">
+			<h3>Partners</h3>
+			<!-- OWL CAROUSEL -->
+			<div class="owl-carousel owl-tablet">
+				<div class="item">
+					<a href="" target="_blank">
+						<img src="/wp-content/uploads/2018/02/cleaver-brooks.png" alt="">
+					</a>
+				</div>
+				<div class="item">
+					<a href="" target="_blank">
+						<img src="/wp-content/uploads/2018/02/armstrong.png" alt="">
+					</a>
+				</div>
+				<div class="item">
+					<a href="" target="_blank">
+						<img src="/wp-content/uploads/2018/02/viking-pumps.png" alt="">
+					</a>
+				</div>
+				<div class="item">
+					<a href="" target="_blank">
+						<img src="/wp-content/uploads/2018/02/gardner-denver.png" alt="">
+					</a>
+				</div>
+			</div>
+			</div>
+
 	</div>
 </section>
 

@@ -10,6 +10,9 @@ h1,h2,h3,h4 {
 h2 {
 	font-size: $ft-sz-h2;
 }
+h3 {
+  font-size: $ft-sz-h3;
+}
 ul {
 	margin: 0;
 	padding: 0;
@@ -619,6 +622,7 @@ header.entry-header {
   background: #fff;
   position: relative;
   padding: 80px 0 100px 0;
+  overflow: hidden;
   .content {    
     width: 70%;
     // max-width: 700px;
@@ -637,7 +641,7 @@ header.entry-header {
   .sidebar {
     // border-left: 2px solid #ddd;
     border: 6px solid #ddd;
-    // background: #eee;
+    background: #fff;
     // box-shadow: 0 0 10px #ddd;
     width: 22%;
     margin-left: 8%;
@@ -672,6 +676,9 @@ header.entry-header {
       margin-top: 26px;
     }
   }
+}
+.tablet-carousel {
+  display: none !important;
 }
 
 // Search

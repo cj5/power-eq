@@ -145,6 +145,20 @@ jQuery(document).ready(function($) {
       0:{ items: 1 }
     }
   });
+  $('.owl-tablet').owlCarousel({
+    loop:true,
+    margin:10,
+    nav: false,
+    navText:['',''],
+    margin: 18,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    // autoplayHoverPause: true,
+    responsive:{
+      0:{ items: 1 }
+    }
+  });
 
   // MOBILE NAV POSITIONING
   $('.navicon').click(function() {
